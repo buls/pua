@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <fragment
+            android:id="@+id/PUMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".PollingUnitDetails"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Polling Unit ID"
+            android:textSize="40dp"
+            android:id="@+id/puID_details" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/puDESC_details"
+            android:textSize="20dp"
+            android:layout_below="@+id/puID_details"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PUVotingHereImgBtn"
+                    android:maxHeight="100dp"
+                    android:minHeight="75dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/voting_here"
+                    android:id="@+id/PUVotingHere"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PUWhatOtherSayImgBtn"
+                        android:layout_gravity="center_horizontal"
+                        android:maxHeight="100dp"
+                        android:minHeight="75dp"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/view_others_say"
+                        android:id="@+id/PUWhatOtherSay"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PUForumImgBtn"
+                        android:layout_gravity="center_horizontal"
+                        android:maxHeight="100dp"
+                        android:minHeight="75dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/pu_forum"
+                        android:id="@+id/PUForum"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

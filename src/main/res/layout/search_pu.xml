@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingTop="20dp"
+android:paddingLeft="10dp"
+android:paddingRight="10dp">
+
+    <Spinner
+        android:id="@+id/SearchState_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/state_arrays"
+        android:prompt="@string/state_search"
+        android:paddingBottom="10dp"/>
+
+    <Spinner
+        android:id="@+id/SearchLGA_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/LGA_arrays"
+        android:prompt="@string/LGA_search"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_keywords"
+            android:hint="@string/searchKeyword"
+            android:paddingBottom="30dp"
+            android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:id="@+id/SearchPUButton"/>
+
+</LinearLayout>
